@@ -5,4 +5,4 @@ scoreboard players operation $time bot.fire += #ignite bot.fire
 execute if score $time bot.fire matches 256.. run scoreboard players set $time bot.fire 255
 execute store result storage bot:ignite macro.ignite_time int 1 run scoreboard players get $time bot.fire
 scoreboard players operation $time bot.fire -= #ignite bot.fire
-function player_fire:add_ignite with storage bot:ignite macro
+function player_fire:a with storage bot:ignite macro
