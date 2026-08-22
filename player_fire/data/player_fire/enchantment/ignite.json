@@ -1,0 +1,40 @@
+{
+    "anvil_cost": 0,
+    "description": [""],
+    "effects": {
+        "tick": [
+            {
+                "effect": {
+                    "type": "minecraft:ignite",
+                    "duration": {
+                        "type": "minecraft:linear",
+                        "base": 1.0,
+                        "per_level_above_first": 1.0
+                    }
+                }
+            },
+            {
+                "effect": {
+                    "type": "run_function",
+                    "function": "player_fire:remove"
+                }
+            }
+        ]
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_level": 255,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "slots": [
+        "body"
+    ],
+    "supported_items": [
+        "stone"
+    ],
+    "weight": 1
+}
